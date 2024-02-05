@@ -1,10 +1,13 @@
 import { useState } from "react";
 import "./App.css";
+import Nav from "./Nav";
+import Homepage from "./Homepage";
 
 export default function App() {
   return (
     <>
-      <h1>Hello MUI Assistant</h1>
+      <Nav />
+      <Homepage/>
     </>
   );
 }

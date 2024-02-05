@@ -1,5 +1,4 @@
 import "./Nav.css";
-import ArchitectureSharpIcon from "@mui/icons-material/ArchitectureSharp";
 import HomeIcon from "@mui/icons-material/Home";
 import FeedIcon from "@mui/icons-material/Feed";
 import CodeIcon from "@mui/icons-material/Code";
