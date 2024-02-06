@@ -14,7 +14,7 @@ export default function Homepage() {
         </h3>
         <div>
           <Button id="getStartedBtn" variant="contained">
-            Get Started
+            <a href="#collectionContaienr">Get Started</a>
           </Button>
         </div>
       </div>

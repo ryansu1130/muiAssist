@@ -60,7 +60,7 @@
 
 #homeContainer div {
   width: 50%;
-  height: 10%;
+  height: 8%;
   opacity: 0;
   -webkit-animation: slidein 1s ease 5s forwards;
   -moz-animation: slidein 1s ease 5s forwards;
@@ -74,6 +74,12 @@
   font-family:'Times New Roman', Times, serif;
   border-radius: 35px;
   font-size: 2vw;
+}
+
+#getStartedBtn a{
+  color: white;
+  text-decoration: none;
+  font-size: 2.5vw;
 }
 
 @-webkit-keyframes slidein {
