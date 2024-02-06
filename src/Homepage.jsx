@@ -7,14 +7,15 @@ export default function Homepage() {
       <div id="homeContainer">
         <h1 id="hello">Hello</h1>
         <h2>Your Material UI Helper</h2>
-        <h2>Is Here</h2>
+        <h2>Has Arrived</h2>
         <h3>
-          Customize MUI To The Way That Fits Your Liking Customize MUI To The
-          Way That Fits Your Liking Customize MUI To The Way That Fits Your
-          Liking Customize MUI To The Way That Fits Your Liking
+          MUI Assistant Helps You To Build And Customize MUI Component To The
+          Way That Fits Your Liking
         </h3>
         <div>
-          <Button id="getStartedBtn" variant="contained">Get Started</Button>
+          <Button id="getStartedBtn" variant="contained">
+            Get Started
+          </Button>
         </div>
       </div>
     </>
