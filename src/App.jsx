@@ -6,7 +6,11 @@ import Homepage from "./Homepage";
 import Collection from "./Collection";
 import Component from "./Component";
 import Button from "@mui/material/Button";
-import Rating from "@mui/material/Rating";
+import Slider from "@mui/material/Slider";
+import Checkbox from "@mui/material/Checkbox";
+import ButtonGroup from "@mui/material/ButtonGroup";
+import Alert from "@mui/material/Alert";
+import TextField from "@mui/material/TextField";
 
 export default function App() {
   const initData = [
@@ -27,25 +31,28 @@ export default function App() {
     },
     {
       id: uid(),
-      pre: <Rating id="component" defaultValue={2.5} precision={0.5} />,
-      name: "Rating",
-      style: { prop1: 'defaultValue="2.5"', prop2: 'precision="0.5"' },
-      secltion: [
-        { type: "defaultValue", label: ["1", "2", "3", "4", "5"] },
-        { type: "precision", label: ["0.5", "1"] },
-        { type: "defaultValue", label: ["1", "2", "3", "4", "5"] },
-        { type: "defaultValue", label: ["1", "2", "3", "4", "5"] },
-      ],
+      pre: <Slider id="component" defaultValue={30} />,
+      name: "Slider",
+      style: { prop1: 'defaultValue="30"' },
+      secltion: [{ type: "defaultValue", label: ["10", "50", "100"] }],
+    },
+    {
+      id: uid(),
+      pre: <Checkbox id="component" defaultChecked />,
+      name: "Checkbox",
+      style: { prop1: "defaultChecked" },
+      secltion: [{ type: "defaultChecked", label: ["Checked", "Uncheck"] }],
     },
     {
       id: uid(),
       pre: (
-        <Button id="component" variant="outlined" color="error">
-          {" "}
-          Click Me{" "}
-        </Button>
+        <ButtonGroup variant="contained" aria-label="Basic button group">
+          <Button>One</Button>
+          <Button>Two</Button>
+          <Button>Three</Button>
+        </ButtonGroup>
       ),
-      name: "Button",
+      name: "ButtonGroup",
       style: { prop1: 'variant="outlined"', prop2: 'color="error"' },
       secltion: [
         { type: "variant", label: ["outlined", "contained"] },
@@ -54,17 +61,24 @@ export default function App() {
     },
     {
       id: uid(),
-      pre: <Rating id="component" defaultValue={2.5} precision={0.5} />,
-      name: "Rating",
-      style: { prop1: 'defaultValue="2.5"', prop2: 'precision="0.5"' },
+      pre: <Alert severity="info">This is an info Alert.</Alert>,
+      name: "Alert",
+      style: { prop1: 'severity="info"' },
       secltion: [
-        { type: "defaultValue", label: ["1", "2", "3", "4", "5"] },
-        { type: "precision", label: ["0.5", "1"] },
-        { type: "defaultValue", label: ["1", "2", "3", "4", "5"] },
-        { type: "defaultValue", label: ["1", "2", "3", "4", "5"] },
+        { type: "severity", label: ["info", "success", "error", "warning"] },
       ],
     },
-    
+    {
+      id: uid(),
+      pre: <TextField label="Outlined" variant="outlined" />,
+      name: "TextField",
+      style: { prop1: 'label="Outlined"', prop2: 'variant="outlined"' },
+      secltion: [
+        { type: "label", label: ["Outlined", "contained"] },
+        { type: "variant", label: ["Outlined", "contained"] },
+        { type: "color", label: ["success", "error"] },
+      ],
+    },
   ];
   const [array, setArray] = useState(initData);
 

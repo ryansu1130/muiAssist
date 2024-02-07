@@ -1,7 +1,15 @@
 import "./Component.css";
+import { useState } from "react";
 import Button from "@mui/material/Button";
 
 export default function Component({ array }) {
+
+  const [copy, setCopy] = useState(array.pre);
+
+  const handleChange = (e) => {
+    console.log(e.target.name);
+    console.log(e.target.value);
+  };
   return (
     <>
       <hr style={{ marginTop: "2vw", marginBottom: "2vw" }} />
@@ -11,7 +19,7 @@ export default function Component({ array }) {
           <p>{array.name}</p>
         </div>
 
-        <div id="showComponent">{array.pre}</div>
+        <div id="showComponent">{copy}</div>
 
         <div id="showCode">
           <p>
@@ -36,7 +44,13 @@ export default function Component({ array }) {
                   return (
                     <>
                       <label htmlFor={value.type}>{k}</label>
-                      <input type="radio" name={value.type} id={value.type} />
+                      <input
+                        onChange={handleChange}
+                        type="radio"
+                        value={k}
+                        name={value.type}
+                        id={value.type}
+                      />
                     </>
                   );
                 })}

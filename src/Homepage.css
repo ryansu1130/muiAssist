@@ -74,6 +74,7 @@
   font-family:'Times New Roman', Times, serif;
   border-radius: 35px;
   font-size: 2vw;
+  overflow: hidden;
 }
 
 #getStartedBtn a{
