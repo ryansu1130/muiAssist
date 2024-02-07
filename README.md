@@ -1,8 +1,7 @@
-# React + Vite
+# MUI Assistant
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Hello, thank you for landing here.
+This website was created in less than 12 hours of total working time.
+The main purpose of this website is to demonstrate a concept of how MUI can be used.
+I will be keep updating on this project through out so be sure to check back.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh

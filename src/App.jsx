@@ -17,13 +17,13 @@ export default function App() {
     {
       id: uid(),
       pre: (
-        <Button id="component" variant="outlined" color="error">
+        <Button id="component" variant="contained" color="success">
           {" "}
           Click Me{" "}
         </Button>
       ),
       name: "Button",
-      style: { prop1: 'variant="outlined"', prop2: 'color="error"' },
+      style: { prop1: 'variant="contained"', prop2: 'color="success"' },
       secltion: [
         { type: "variant", label: ["outlined", "contained"] },
         { type: "color", label: ["error", "success"] },

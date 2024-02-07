@@ -19,17 +19,17 @@ export default function Nav() {
         </a>
       </button>
       <button>
-        <a href="">
+        <a target="_blank" href="https://react.dev/">
           <CodeIcon id="homeicon" sx={{ fontSize: 20 }} /> React
         </a>
       </button>
       <button>
-        <a href="">
+        <a target="_blank" href="https://mui.com/material-ui/getting-started/">
           <BrushIcon id="homeicon" sx={{ fontSize: 20 }} /> MUI
         </a>
       </button>
       <button>
-        <a href="">
+        <a target="_blank" href="https://github.com/ryansu1130/muiAssist">
           <GitHubIcon id="homeicon" sx={{ fontSize: 20 }} /> GitHub
         </a>
       </button>
